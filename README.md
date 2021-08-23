@@ -50,4 +50,4 @@ yarn list-imports help
 
 ### License
 
-MIT License (x) 2021, Richard Marks
+MIT License (C) 2021, Richard Marks [See LICENSE.md](./LICENSE.md)
