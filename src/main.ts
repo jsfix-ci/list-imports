@@ -22,12 +22,6 @@ async function main() {
     .action(async (sourcePath: string, options: IExtractOptions) => {
       await extractCommand(sourcePath, options);
     });
-  // program
-  //   .command("toggle <plist_path>")
-  //   .description("toggle ATS on or off")
-  //   .action(async (plistPath: string) => {
-  //     await toggle(plistPath);
-  //   });
   await program.parseAsync(process.argv);
 }
 

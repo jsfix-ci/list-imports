@@ -2,6 +2,10 @@
   "name": "list-imports",
   "version": "1.0.0",
   "description": "lists the imports of a given TypeScript file",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RichardMarks/list-imports.git"
+  },
   "main": "dist/main.js",
   "bin": {
     "list-imports": "dist/main.js"
@@ -16,7 +20,7 @@
     "typescript": "^4.3.5"
   },
   "scripts": {
-    "prepublish": "yarn build",
+    "prepare": "yarn build",
     "build": "tsc",
     "clean": "rf -rf ./dist",
     "test": "jest --passWithNoTests"

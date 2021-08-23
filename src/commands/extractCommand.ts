@@ -19,6 +19,9 @@ export async function extractCommand(
   sourcePath: string,
   options: IExtractOptions,
 ) {
+  if (!options.local && !options.external && !options.all) {
+    options.all = true;
+  }
   const model: IExtractModel = await extractImports(
     { sourcePath, localImports: [], externalImports: [] },
     options,

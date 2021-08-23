@@ -69,28 +69,6 @@ export async function getImportsFromTypescriptSource(
           categorize(moduleName);
         }
       }
-
-      // if (syntaxKind === "ImportDeclaration") {
-      //   // import x from 'foo'
-      //   // import { x } from 'foo'
-      //   const importDecl: ts.ImportDeclaration =
-      //     child as ts.ImportDeclaration;
-      //   const moduleSpec: ts.StringLiteral =
-      //     importDecl.moduleSpecifier as ts.StringLiteral;
-      //   moduleName = moduleSpec.text;
-      // } else if (syntaxKind === "ImportEqualsDeclaration") {
-      //   // import x = require('foo')
-      //   const importEqDecl: ts.ImportEqualsDeclaration =
-      //     child as ts.ImportEqualsDeclaration;
-      //   const moduleRef: ts.ExternalModuleReference =
-      //     importEqDecl.moduleReference as ts.ExternalModuleReference;
-      //   const exp: ts.StringLiteral =
-      //     moduleRef.expression as ts.StringLiteral;
-      //   moduleName = exp.text;
-      // }
-      // if (moduleName) {
-      //   categorize(moduleName);
-      // }
     });
   }
 
