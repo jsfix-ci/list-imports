@@ -19,6 +19,10 @@ async function main() {
     .option("--local", "extract local imports")
     .option("--external", "extract external imports")
     .option("--json", "output in JSON format")
+    .option(
+      "--multi",
+      "recursively find all TypeScript source files and extract imports",
+    )
     .action(async (sourcePath: string, options: IExtractOptions) => {
       await extractCommand(sourcePath, options);
     });

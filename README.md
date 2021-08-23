@@ -36,6 +36,12 @@ Specify the output to be in JSON format
 yarn list-imports extract --all --json path/to/source-file.ts
 ```
 
+Recursively extract (pass a directory as the source path)
+
+```
+yarn list-imports extract --multi path/to/sources/
+```
+
 Get help with the tool commands
 
 ```

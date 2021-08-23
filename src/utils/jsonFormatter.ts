@@ -12,3 +12,15 @@ export async function jsonFormatter(
     return "";
   }
 }
+
+export async function jsonFormatterMulti(
+  models: IExtractModel[],
+): Promise<string> {
+  try {
+    const serialized: string = JSON.stringify(models, null, 2);
+    return serialized;
+  } catch (err) {
+    console.log(chalk.redBright(`X ${err.message}`));
+    return "";
+  }
+}
