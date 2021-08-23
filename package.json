@@ -1,0 +1,28 @@
+{
+  "name": "list-imports",
+  "version": "1.0.0",
+  "description": "lists the imports of a given TypeScript file",
+  "main": "dist/main.js",
+  "bin": {
+    "list-imports": "dist/main.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.1",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "tsc",
+    "clean": "rf -rf ./dist",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0"
+  }
+}
